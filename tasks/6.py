@@ -31,7 +31,7 @@ for x in range(-20, 20):
         t.dot('black')
 t.done()
 '''
-
+import turtle
 
 # Задание №2:
 # Исполнитель Черепаха действует на плоскости с декартовой системой координат.
@@ -142,6 +142,341 @@ t.done()
 
 
 # todo: сюда можно писать заметки, чтобы не забыть задать вопрос репетитору ☝️
-progress_result = ()  # Сюда заносятся номера, прорешанных задач.
-print('Рекомендуемое кол-во решенных задач для закрепления номера 20.')
-print(f'Проверим прогресс: ~{int(len(progress_result) * (100 / 20))}% задач прорешано.')
+# progress_result = ()  # Сюда заносятся номера, прорешанных задач.
+# print('Рекомендуемое кол-во решенных задач для закрепления номера 20.')
+# print(f'Проверим прогресс: ~{int(len(progress_result) * (100 / 20))}% задач прорешано.')
+
+
+# from turtle import *
+# tracer(0)
+# screensize(5000, 5000)
+# r = 15
+#
+# for i in range(5):
+#     forward(37*r); rt(90); forward(44*r); rt(90)
+# up()
+# back(18*r); rt(90); forward(29*r); lt(90)
+# down()
+# for i in range(5):
+#     forward(31*r); rt(90); forward(35*r); rt(90)
+# up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x*r, y*r)
+#         dot(3, "red")
+# turtle.mainloop()
+# done()
+
+# import turtle as t
+#
+# t.tracer(0)
+# t.screensize(5000, 5000)
+# r = 50
+#
+# t.rt(30)
+# for i in range(3):
+#     t.rt(150); t.fd(6*r); t.rt(30); t.fd(12*r)
+# t.up()
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         t.goto(x*r, y*r)
+#         t.dot(3, "red")
+# t.mainloop()
+# t.done()
+
+# import turtle as t
+#
+# t.tracer(0)
+# t.screensize(5000, 5000)
+# r = 15
+#
+# for i in range(9):
+#     t.fd(27*r); t.rt(90); t.fd(30*r); t.rt(90)
+# t.up()
+# t.fd(3*r); t.rt(90); t.fd(6*r); t.lt(90)
+# t.down()
+# for i in range(9):
+#     t.fd(77*r); t.rt(90); t.fd(66*r); t.rt(90)
+# t.up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         t.goto(x*r,y*r)
+#         t.dot(3, "red")
+# t.mainloop()
+# t.done()
+
+
+
+# from turtle import *
+#
+# tracer(0)
+# screensize(5000, 5000)
+# r = 25
+# for i in range(3):
+#     fd(27*r); rt(90); fd(12*r); rt(90)
+# up(); fd(4*r); rt(90); fd(6*r); lt(90)
+# down()
+# for i in range(4):
+#     fd(83*r); rt(90); fd(77*r); rt(90)
+# up()
+#
+# for x in range(-60, 100):
+#     for y in range(-100, 100):
+#         goto(x*r, y*r)
+#         dot(3, "red")
+# turtle.mainloop()
+# down()
+# print(28*13) 364
+# print(84*78) 6552
+# print((364+6552) - (7*24))
+# print(1280*960*11) 13516800
+# print(96468992/13516800)
+
+# from turtle import *
+#
+# tracer(0)
+# screensize(5000, 5000)
+# r = 25
+#
+# for i in range(5):
+#     fd(15*r); lt(90); fd(25*r); lt(90)
+# up(); fd(4*r); lt(90); fd(12*r); lt(90)
+# down()
+# for i in range(6):
+#     fd(38*r); rt(90); fd(22*r);rt(90)
+# up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x*r, y*r)
+#         dot(3, "red")
+#
+# turtle.mainloop()
+
+
+# from turtle import *
+# tracer(0)
+# screensize(5000, 5000)
+# r = 25
+#
+# for i in range(13):
+#     fd(13*r); rt(90); fd(5*r)
+# up()
+# rt(90); fd(7*r); lt(90); fd(10*r)
+# down()
+# for i in range(23):
+#     fd(8*r); lt(90); fd(11*r); lt(90)
+# up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x * r, y * r)
+#         dot(3, "red")
+# turtle.mainloop()
+
+# from turtle import *
+# tracer(0)
+# screensize(5000, 5000)
+# r = 25
+#
+# for i in range(2):
+#     fd(28*r); rt(90); fd(18*r); rt(90)
+# up(); fd(14*r); rt(90);fd(10*r);lt(90)
+# down()
+# for i in range(2):
+#     fd(30*r); rt(90); fd(7*r); rt(90)
+# up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x * r, y * r)
+#         dot(3, "red")
+# turtle.mainloop()
+
+# from turtle import *
+# tracer(0)
+# screensize(10000, 10000)
+# r = 25
+#
+# for i in range(3):
+#     fd(10*r); rt(90); fd(15*r); rt(90)
+# up(); fd(4*r); rt(90); fd(7*r); lt(90)
+# down()
+# for i in range(2):
+#     fd(80*r); rt(90); fd(60*r); rt(90)
+# up()
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x * r, y * r)
+#         dot(3, "red")
+#
+# turtle.mainloop()
+
+# from turtle import *
+# tracer(0)
+# screensize(5000, 5000)
+# r = 25
+#
+# for i in range(3):
+#     fd(25*r); lt(90); fd(30*r); lt(90)
+# up()
+# fd(20*r); rt(90); back(7*r); lt(90)
+# down()
+# for i in range(3):
+#     fd(60*r); rt(90); fd(30*r); rt(90)
+# up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x*r, y*r)
+#         dot(3, "red")
+
+# turtle.mainloop()
+
+#
+# from turtle import *
+# tracer(0)
+# screensize(5000, 5000)
+# r = 25
+#
+# for i in range(6):
+#     fd(7*r); rt(45); fd(4*r); rt(90); fd(4*r); rt(45)
+# up()
+# fd(1*r); rt(90); back(20*r)
+# down()
+# for i in range(5):
+#     fd(24*r); lt(90); fd(6*r); lt(90)
+# up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x * r, y * r)
+#         dot(3, "red")
+#
+# turtle.mainloop()
+
+#
+# from turtle import *
+# tracer(0)
+# screensize(5000, 5000)
+# r = 25
+#
+# for i in range(8):
+#     fd(16*r); rt(90); fd(22*r); rt(90)
+# up()
+# fd(5*r); rt(90); fd(5*r); lt(90)
+# down()
+# for i in range(8):
+#     fd(52*r); rt(90); fd(77*r); rt(90)
+# up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x * r, y * r)
+#         dot(3, "red")
+#
+# turtle.mainloop()
+
+#
+# from turtle import *
+# tracer(0)
+# screensize(5000, 5000)
+# r = 15
+#
+# for i in range(4):
+#     fd(10*r); rt(270)
+# up(); fd(3*r); rt(270);fd(5*r); rt(90)
+# down()
+# for i in range(2):
+#     fd(10*r); rt(270); fd(12*r); rt(270)
+# up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x * r, y * r)
+#         dot(3, "red")
+# turtle.mainloop()
+
+# from turtle import *
+# tracer(0)
+# screensize(10000, 10000)
+# r = 25
+#
+# for i in range(3):
+#     fd(27*r); rt(90); fd(12*r); rt(90)
+# up(); fd(4*r); rt(90); fd(6*r); lt(90)
+# down()
+# for i in range(4):
+#     fd(83*r); rt(90); fd(77*r); rt(90)
+# up()
+#
+# for x in range(-100, 100):
+#     for y in range(-100, 100):
+#         goto(x * r, y * r)
+#         dot(3, "red")
+#
+# turtle.mainloop()
+#
+# print((28 * 12 + 84 * 77) - 24 * 6)
+
+# from turtle import *
+# tracer(0)
+# screensize(5000, 5000)
+# r = 25
+#
+# for i in range(5):
+#     fd(40*r); rt(90); fd(46*r); rt(90)
+# up(); fd(19*r); rt(90); fd(19*r); lt(90)
+# down()
+# for i in range(5):
+#     fd(37*r); rt(90); fd(19*r); rt(90)
+# up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x*r, y*r)
+#         dot(3, "red")
+# turtle.mainloop()
+#
+# from turtle import *
+# tracer(0)
+# screensize(5000, 5000)
+# r = 25
+#
+# for i in range(3):
+#     fd(39*r); rt(90); fd(48*r); rt(90)
+# up(); fd(27*r); rt(90); fd(24*r); lt(90)
+# down()
+# for i in range(3):
+#     fd(29*r); rt(90); bk(18*r); rt(90)
+# up()
+#
+# for x in range(-50, 50):
+#     for y in range(-50, 50):
+#         goto(x*r, y*r)
+#         dot(3, "red")
+#
+# turtle.mainloop()
+
+
+from turtle import *
+tracer(0)
+screensize(5000, 5000)
+r = 25
+
+for i in range(24):
+    fd(10*r); rt(90); fd(5*r)
+up(); lt(90); fd(7*r); rt(90)
+down()
+for i in range(22):
+    fd(8*r); rt(90); fd(20*r); rt(90)
+up()
+
+for x in range(-50, 50):
+    for y in range(-50, 50):
+        goto(x*r, y*r)
+        dot(3, "red")
+
+turtle.mainloop()

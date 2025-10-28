@@ -123,7 +123,270 @@ print(max(R))
 # endregion (не удаляйте меня, я тут не просто так)
 
 
-# todo: сюда можно писать заметки, чтобы не забыть задать вопрос репетитору ☝️
-progress_result = ()  # Сюда заносятся номера, прорешанных задач.
-print('Рекомендуемое кол-во решенных задач для закрепления номера 30.')
-print(f'Проверим прогресс: ~{int(len(progress_result) * (100 / 30))}% задач прорешано.')
+# # todo: сюда можно писать заметки, чтобы не забыть задать вопрос репетитору ☝️
+# progress_result = ()  # Сюда заносятся номера, прорешанных задач.
+# print('Рекомендуемое кол-во решенных задач для закрепления номера 30.')
+# print(f'Проверим прогресс: ~{int(len(progress_result) * (100 / 30))}% задач прорешано.')
+'''
+b = []
+for N in range(1, 10000):
+    n = bin(N)[2:]
+    if N % 2 == 0:
+        n = "10" + n
+    else:
+        n = "1" + n + "01"
+    r = int(n, 2)
+    if N <= 12:
+        print(r)
+'''
+'''
+b = []
+for N in range(1, 1000):
+    n = bin(N)[2:]
+    if N % 3 == 0:
+        n = n + n[-3:]
+    else:
+        n = n + bin((N % 3)*3)[2:]
+    r = int(n, 2)
+    if r >= 200:
+        b.append(N)
+print(min(b))
+'''
+
+def c6(x):
+    s = ""
+    while x > 0:
+        s = str(x % 6)+s
+        x //= 6
+    return s
+
+# k = 0
+# b = []
+# for N in range(1, 10000):
+#     n = c6(N)
+#     for m in n:
+#         k += int(m)
+#     if k % 5 == 0:
+#         n = n.replace("0", "*").replace("3", "0").replace("*", "3")
+#         n = "11" + n
+#     else:
+#         n += "44"
+#         n = n[0] + "05" + n[3:]
+#     r = int(n, 6)
+#     if r > 1500:
+#         print(N)
+#         break
+
+# for N in range(1, 10000):
+#     n = bin(N)[2:]
+#     if len(n) % 2 == 0:
+#         n = n + "1"
+#     else:
+#         n = "1" + n
+#     r = int(n, 2)
+#     if r > 666:
+#         print(N)
+# #         break
+# l = []
+# for N in range(1, 25+1):
+#     n = bin(N)[2:]
+#     if N % 2 != 0:
+#         n = "10" + n + "1"
+#     else:
+#         n = "10" + n + "0111"
+#     re = int(n, 2)
+#     l.append(re)
+# print(l)
+# print(max(l))
+
+# def c3(x):
+#     s = ""
+#     while x > 0:
+#         s = str(x % 3) + s
+#         x //= 3
+#     return s
+#
+# for N in range(3, 20000):
+#     n = c3(N)
+#     if N % 3 == 0:
+#         n = n + n[-2] + n[-1]
+#     else:
+#         n = n + c3(N % 3)
+#     r = int(n, 3)
+#     if r <= 150:
+#         print(N, r)
+
+# def c3(x):
+#     s = ""
+#     while x > 0:
+#         s = str(x % 3) + s
+#         x //= 3
+#     return s
+#
+# l = []
+# for N in range(1, 10000):
+#     n = c3(N)
+#     if N % 5 == 0:
+#         n = n + n[-2:]
+#     else:
+#         k = (N % 5) * 2
+#         n = n + c3(k)
+#     R = int(n, 4)
+#     if R <= 514:
+#         l.append(R)
+# print(max(l))
+
+# def c(x):
+#     s = ""
+#     while x > 0:
+#         s = str(x % 3) + s
+#         x //= 3
+#     return s
+# l = []
+# for N in range(1, 10000):
+#     n = c(N)
+#     if N % 5 == 0:
+#         n = n + n[-2:]
+#     if N % 5 != 0:
+#         n = n + c((N % 5) * 7)
+#     r = int(n, 3)
+#     if r <= 273:
+#         print(N, r)
+
+# def c(x):
+#     s = ""
+#     while x > 0:
+#         s = str(x % 3) + s
+#         x //= 3
+#     return s
+#
+# for N in range(1, 10000):
+#     n = c(N)
+#     if N % 3 == 0:
+#         n = n + "10"
+#     else:
+#         n = n + c((N % 3) * 5)
+#     r = int(n, 3)
+#     if r > 130:
+#         print(N)
+#         break
+
+# l = []
+# for N in range(1, 10000):
+#     n = bin(N)[2:]
+#     if n.count("1") % 2 == 0:
+#         n = "10" + n + "0"
+#     else:
+#         n = "1" + n + "11"
+#     r = int(n, 2)
+#     if r <= 410:
+#         l.append(r)
+# print(max(l))
+
+
+# def c3(x):
+#     s = ""
+#     while x > 0:
+#         s = str(x % 3) + s
+#         x //= 3
+#     return s
+#
+# l = []
+# l1 = []
+# for N in range(1, 10000):
+#     n = c3(N)
+#     if N % 3 == 0:
+#         n = n + n[-2:]
+#     else:
+#         for x in n:
+#             l1.append(int(x))
+#         n = n + c3(sum(l1))
+#     r = int(n, 3)
+#     if r > 220:
+#         l.append(r)
+# print(min(l))
+
+# def c3(x):
+#     s = ""
+#     while x > 0:
+#         s = str(x % 3) + s
+#         x //= 3
+#     return s
+#
+# for N in range(1, 1000):
+#     n = c3(N)
+#     if N % 3 == 0:
+#         n = n + n[-3:]
+#     else:
+#         l = (N % 3) * 3
+#         n = c3(l)
+#     r = int(n, 3)
+#     if r > 344:
+#         print(N)
+#         break
+# l = []
+# for N in range(1, 10000):
+#     n = bin(N)[2:]
+#     if N % 2 == 0:
+#         n = "10" + n
+#     else:
+#         n = "1" + n + "01"
+#     r = int(n, 2)
+#     if N <= 12:
+#         l.append(r)
+# print(max(l))
+
+# def c3(x):
+#     s = ""
+#     while x > 0:
+#         s = str(x % 3) + s
+#         x //= 3
+#     return s
+# l = []
+# for N in range(1, 10000):
+#     n = c3(N)
+#     if N % 3 == 0:
+#         n = "1" + n + "02"
+#     else:
+#         n = n + c3((N % 3) * 4)
+#     r = int(n, 3)
+#     if r < 199:
+#         l.append(N)
+# print(max(l))
+
+
+# def c3(x):
+#     s = ""
+#     while x > 0:
+#         s = str(x % 3) + s
+#         x //= 3
+#     return s
+#
+# for N in range(1, 10000):
+#     n = c3(N)
+#     if N % 3 == 0:
+#         n = "1" + n + "02"
+#     else:
+#         n = n + c3((N % 3) * 4)
+#     r = int(n, 3)
+#     if r < 100:
+#         print(N, r)
+
+
+# def c(x):
+#     s = ""
+#     while x > 0:
+#         s = str( x % 3) + s
+#         x //= 3
+#     return s
+#
+# for N in range(1, 10000):
+#     n = c(N)
+#     l = n.count("1") + n.count("2")*2 + n.count("3")*3
+#     if l % 9 == 0:
+#         n = n + "2"
+#     else:
+#         n = n + c(l % 9)
+#     r = int(n, 3)
+#     if N > 166:
+#         print(r, N)

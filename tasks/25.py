@@ -87,23 +87,23 @@ for x in range(23, 10 ** 9, 23):
 # а во втором столбце — сумму делителей.
 
 # Решение:
-'''
-from fnmatch import *
 
-def divisors(x):
-    div = []
-    for j in range(1, int(x**0.5)+1):
-        if x % j == 0:
-            div += [j, x // j]
-    return sorted(set(div))
+# from fnmatch import *
+#
+# def divisors(x):
+#     div = []
+#     for j in range(1, int(x**0.5)+1):
+#         if x % j == 0:
+#             div += [j, x // j]
+#     return sorted(set(div))
+#
+# for x in range(53, 10**7, 53):
+#     if fnmatch(str(x), '*2?2*'):
+#         if str(x) == str(x)[::-1]:
+#             d = divisors(x)
+#             if len(d) > 30:
+#                 print(x, sum(d))
 
-for x in range(53, 10**7, 53):
-    if fnmatch(str(x), '*2?2*'):
-        if str(x) == str(x)[::-1]:
-            d = divisors(x)
-            if len(d) > 30:
-                print(x, sum(d))
-'''
 
 
 # 📚 Полезные ссылки на статьи и разборы задач:
@@ -112,8 +112,191 @@ for x in range(53, 10**7, 53):
 # 💡Циклы for и while, как использовать циклы для сдачи КЕГЭ: https://t.me/informatika_kege_itpy/169
 # endregion (не удаляйте меня, я тут не просто так)
 
+#
+# # todo: сюда можно писать заметки, чтобы не забыть задать вопрос репетитору ☝️
+# progress_result = ()  # Сюда заносятся номера, прорешанных задач.
+# print('Рекомендуемое кол-во решенных задач для закрепления номера 50.')
+# print(f'Проверим прогресс: ~{int(len(progress_result) * (100 / 50))}% задач прорешано.')
 
-# todo: сюда можно писать заметки, чтобы не забыть задать вопрос репетитору ☝️
-progress_result = ()  # Сюда заносятся номера, прорешанных задач.
-print('Рекомендуемое кол-во решенных задач для закрепления номера 50.')
-print(f'Проверим прогресс: ~{int(len(progress_result) * (100 / 50))}% задач прорешано.')
+
+# from math import *
+# def f(x):
+#     delit = []
+#     for i in range(2, isqrt(x)+1):
+#         if x % i == 0:
+#             delit += [i, x//i]
+#     return sorted(set(delit))
+#
+# cnt = 0
+# for x in range(300_000, 10**10):
+#     l = 0
+#     dev = f(x)
+#     if len(dev):
+#         for i in dev:
+#             if i % 2 != 0:
+#                 l += i
+#     if l % 10 == 7:
+#         cnt += 1
+#         print(x, l)
+#         if cnt == 5:
+#             break
+
+# from math import isqrt
+# def f(x):
+#     deliteli = []
+#     for i in range(2, isqrt(x)+1):
+#         if x % i == 0:
+#             deliteli += [i, x // i]
+#     return sorted(set(deliteli))
+#
+# cnt = 0
+# for x in range(800_000, 10**10):
+#     div = f(x)
+#     if len(div):
+#         M = max(div) + min(div)
+#         if M % 10 == 4:
+#             cnt += 1
+#             print(x, M)
+#         if cnt == 5:
+#             break
+
+# from fnmatch import *
+# for x in range(84318, 10**12, 84318):
+#     if fnmatch(str(x), "5*7?"):
+#         if len(str(x)) == len(set(str(x))):
+#             print(x, x // 84318)
+
+#
+# from math import isqrt
+# def f(x):
+#     deliteli = []
+#     for i in range(1, isqrt(x)+1):
+#         if x % i == 0:
+#             deliteli += [i, x//i]
+#     return deliteli
+#
+# cnt = 0
+# for x in range(500_000, 10**12):
+#     if cnt == 5: break
+#     div = f(x)
+#     R = sum(div)
+#     if R % 10 == 6:
+#         cnt += 1
+#         print(x, R)
+
+# from fnmatch import *
+# for x in range(7993, 10**10+1, 7993):
+#     if fnmatch(str(x), "4*4736*1"):
+#         print(x, x // 7993)
+
+
+# from math import  isqrt
+# def f(x):
+#     deliteli = sorted(set([]))
+#     for i in range(2, isqrt(x)+1):
+#         if x % i == 0:
+#             deliteli += [i, x//i]
+#     l = sorted([n for n in deliteli if n % 10 == 7 and n != x and n != 7])
+#     return l
+# cnt = 0
+# for x in range(1_125_000, 10**10):
+#     div = f(x)
+#     if len(div):
+#         cnt += 1
+#         print(x, div[0])
+#     if cnt == 5:
+#         break
+
+#
+# from fnmatch import *
+# for x in range(154682, 10**11, 154682):
+#     if fnmatch(str(x), "*192?3*68"):
+#         print(x, x//154682)
+
+# from math import *
+# def f(x):
+#     deliteli = []
+#     for i in range(2, isqrt(x)+1):
+#         if x % i == 0:
+#             deliteli += [i, x // i]
+#     return deliteli
+# cnt = 0
+# for x in range(500_000, 10**12):
+#     if cnt == 5: break
+#     dev = f(x)
+#     if len(dev):
+#         R = sum(dev)
+#         if R % 10 == 9:
+#             cnt += 1
+#             print(x, R)
+
+# from math import *
+# def f(x):
+#     deliteli = []
+#     for i in range(2, isqrt(x)+1):
+#         if x % i == 0:
+#             deliteli += [i, x // i]
+#     l = sorted([n for n in deliteli if n % 10 == 5 and n != 5 and n != x])
+#     return l
+#
+# cnt = 0
+# for x in range(902714, 10**12):
+#     if cnt == 6: break
+#     div = f(x)
+#     if len(div):
+#         cnt += 1
+#         print(x, div[0])
+
+# from math import *
+# def f(x):
+#     deliteli = []
+#     for i in range(2, isqrt(x)+1):
+#         if x % i == 0:
+#             deliteli += [i, x // i]
+#     return sorted(set(deliteli))
+# def Pr(x):
+#     if x <= 1:
+#         return False
+#     for i in range(2, isqrt(x)+1):
+#         if x % i == 0:
+#             return False
+#     return True
+# cnt = 0
+# for x in range(5_400_000, 10**12):
+#     if cnt == 5: break
+#     a = [n for n in f(x) if Pr(n) == True]
+#     if len(a):
+#         M = max(a) + min(a)
+#         if M > 60000:
+#             if str(M) == str(M)[::-1]:
+#                 cnt += 1
+#                 print(x, M)
+
+# from math import *
+# def Prost(x):
+#     if x <= 1:
+#         return False
+#     for i in range(2, isqrt(x)+1):
+#         if x % i == 0:
+#             return False
+#     return True
+#
+# def f(x):
+#     deliteli = []
+#     for i in range(2, isqrt(x)+1):
+#         if x % i == 0:
+#             deliteli += [i, x//i]
+#     return deliteli
+#
+# cnt = 0
+# for x in range(23_600_000, 10**10):
+#     if cnt == 6: break
+#     a = [j for j in f(x) if Prost(j) == True]
+#     if len(a):
+#         M = max(a) + min(a)
+#         if M % 213 == 171:
+#             cnt += 1
+#             print(x, M)
+
+
+
